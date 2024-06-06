@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Right Navbar</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-light ">
+      <div class="container-fluid">
+        <a id="navMenuBar" class="navbar-brand navMenuBar" href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <div id="sideMenu" class="side-NavClose">
+      <a class="nav-menu-item" href="">
+        <i class="fa-solid m-2  fa-house"></i>
+        <span class="menuName d-none">Home</span>
+      </a>
+      <br>
+      <a class="nav-menu-item" href="">
+        <i class="fa-solid m-2  fa-house"></i>
+        <span class="menuName d-none ">Home</span>
+      </a>
+      <br>
+      <a class="nav-menu-item" href="">
+        <i class="fa-solid m-2  fa-house"></i>
+        <span class="menuName d-none ">Home</span>
+      </a>
+      <br>
+      <a class="nav-menu-item" href="">
+        <i class="fa-solid m-2  fa-house"></i>
+        <span class="menuName d-none">Home</span>
+      </a>
+      <br>
+      <a class="nav-menu-item" href="">
+        <i class="fa-solid m-2  fa-house"></i>
+        <span class="menuName d-none ">Home</span>
+      </a>
+      <br>
+    </div>
+    <div id="overlayContent" class="overlayContentClose"></div>
+    <div id="mainContent" class="mainContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-3">
+            <div class="card w-100 ">
+              <img src="./img/pexels-andrea-piacquadio-874158.jpg" class="card-img-top w-100" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-info">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="card w-100 ">
+              <img src="./img/pexels-andrea-piacquadio-874158.jpg" class="card-img-top w-100" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-info">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="card w-100 ">
+              <img src="./img/pexels-andrea-piacquadio-874158.jpg" class="card-img-top w-100" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-info">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="card w-100 ">
+              <img src="./img/pexels-andrea-piacquadio-874158.jpg" class="card-img-top w-100" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-info">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="card w-100 ">
+              <img src="./img/pexels-andrea-piacquadio-874158.jpg" class="card-img-top w-100" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-info">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="card w-100 ">
+              <img src="./img/pexels-andrea-piacquadio-874158.jpg" class="card-img-top w-100" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-info">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery 1.12.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script>
+      $('#navMenuBar').click(function() {
+        sideMenuOpenClose();
+      });
+      $('#overlayContent').click(function() {
+        sideMenuOpenClose();
+      });
+
+      function sideMenuOpenClose() {
+        let sideMenu = $('#sideMenu');
+        let overlayContent = $('#overlayContent');
+        let menuName = $('.menuName');
+        if (sideMenu.hasClass('side-NavClose')) {
+          sideMenu.removeClass('side-NavClose')
+          sideMenu.addClass('side-NavOpen')
+          menuName.removeClass('d-none')
+          overlayContent.removeClass('overlayContentClose')
+          overlayContent.addClass('overLayContent')
+        } else {
+          sideMenu.addClass('side-NavClose')
+          sideMenu.removeClass('side-NavOpen')
+          menuName.addClass('d-none')
+          overlayContent.removeClass('overLayContent')
+          overlayContent.addClass('overlayContentClose')
+        }
+      }
+    </script>
+  </body>
+</html>
